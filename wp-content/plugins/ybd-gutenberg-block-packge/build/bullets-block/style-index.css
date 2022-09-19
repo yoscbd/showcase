@@ -1,0 +1,175 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/bullets-block/style.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.section-forth .create-note {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.section-forth .create-note input {
+  border-radius: 10px;
+}
+.section-forth .create-note h3 {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-forth .create-note h3 svg {
+  padding-right: 0.5rem;
+}
+.section-forth #my-notes,
+.section-forth #my-notes li,
+.section-forth #my-notes p,
+.section-forth #my-notes i {
+  color: #fff;
+  list-style-type: none;
+}
+.section-forth .note_users-message {
+  display: none;
+}
+.section-forth .section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1300px) {
+  .section-forth .section-container {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-forth .section-container {
+    flex-direction: column;
+  }
+}
+.section-forth .section-container .left {
+  width: 50%;
+  max-width: 721px;
+  height: 563px;
+  background: rgb(211, 133, 76);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 106px;
+  padding-right: 106px;
+  padding-top: 122px;
+  padding-bottom: 122px;
+  flex-direction: column;
+  align-items: start;
+  color: #fff;
+}
+@media (max-width: 1439.98px) {
+  .section-forth .section-container .left {
+    height: auto;
+  }
+}
+@media (max-width: 991.98px) {
+  .section-forth .section-container .left {
+    padding: 3rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-forth .section-container .left {
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 1300px) {
+  .section-forth .section-container .left {
+    height: auto;
+    padding: 2rem;
+    width: 59%;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-forth .section-container .left {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .section-forth .section-container .left {
+    height: 480px;
+    width: 50%;
+  }
+}
+.section-forth .section-container .left h4 {
+  font-size: 2rem;
+  font-family: RecifeText;
+  line-height: 3.12rem;
+}
+@media (max-width: 1300px) {
+  .section-forth .section-container .left h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+.section-forth .section-container .left ul {
+  list-style: none;
+  padding: 0;
+}
+.section-forth .section-container .left ul li {
+  font-size: 1.1rem;
+  line-height: 41px;
+  font-family: GTAmerica;
+}
+@media (max-width: 1300px) {
+  .section-forth .section-container .left ul li {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+.section-forth .section-container .left ul li i {
+  width: 8px;
+  height: 9px;
+  color: #fff;
+  padding-right: 1.5rem;
+}
+.section-forth .section-container .left .cta-button {
+  width: 194px;
+  padding: 1rem 0;
+  background-color: #fff;
+  font-size: 1rem;
+  color: #212721;
+}
+.section-forth .section-container .right {
+  width: 50%;
+  max-width: 721px;
+  height: 563px;
+  background: #212721;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1300px) {
+  .section-forth .section-container .right {
+    height: auto;
+    width: 39%;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-forth .section-container .right {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .section-forth .section-container .right {
+    height: 480px;
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

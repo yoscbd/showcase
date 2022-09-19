@@ -1,0 +1,113 @@
+#main-nav {
+    background-color: $navigation__background-color;
+    color: $navigation__font-color;
+    height: 55px;
+
+    @include no_padding__all;
+
+    /*   @media screen and (max-width: 1440px) {
+        height: 55px;
+    } */
+
+    .container {
+        @include no_padding__all;
+
+        /*         @media screen and (max-width: 820px) {
+            justify-content: center;
+
+            #navbarNavDropdown {
+                // display: none !important;
+
+            }
+
+            .navbar-toggler {
+                display: inline-block;
+            }
+        } */
+
+        .navbar-brand {
+            width: 11.25rem;
+            padding: 0;
+            margin: 0;
+            border-right: 1px solid $light-brown-border;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            margin-right: 2.2rem;
+
+            @media (max-width: 1439.98px) {
+                width: auto;
+                padding: 0 1rem 0 1rem;
+            }
+
+            /*     @media screen and (max-width: 820px) {
+                margin-right: 0;
+            } */
+
+            @media screen and (max-width: 340px) {
+                font-size: 1rem;
+            }
+
+
+        }
+
+        .header-demo {
+            @media (max-width: 767.98px) {
+                display: none;
+
+            }
+
+            .demo-text {
+                padding: 0;
+                margin: 0;
+                width: 189px;
+                height: 55px;
+                color: $brand-white;
+                background-color: $cta__background-color;
+                @include flex_horizontal_center;
+
+                @media (max-width: 820px) {
+
+                    width: 100%;
+                    padding: 0 1rem 0 1rem;
+                }
+
+                @media screen and (max-width: 575.98px) {
+                    width: auto;
+                    padding: 0 1rem 0 1rem;
+                }
+
+                /*    @media screen and (max-width: 820px) {
+                    display: none;
+                } */
+
+            }
+        }
+
+        a {
+            font-family: sans-serif;
+        }
+
+        #main-menu {
+            li {
+                margin-right: 50px;
+
+                @media (max-width: 991.98px) {
+                    margin-right: 20px;
+                }
+
+                a {
+                    @include no_padding__all;
+                }
+            }
+        }
+
+
+
+    }
+
+    //mobile
+    .navbar-collapse {
+        background: $brand-white;
+    }
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "build/bullets-block",
+  "version": "0.1.0",
+  "title": "Bullets Block",
+  "category": "widgets",
+  "icon": "yes",
+  "description": "Gutenberg block for displaying bullets on home page 4th seciton",
+  "supports": {
+    "html": false,
+    "multiple": true,
+    "color": {
+      "link": true,
+      "gradients": true,
+      "background": false
+    }
+  },
+  "textdomain": "ybd-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "keywords": [
+    "bullets",
+    "noth",
+    "ybd"
+  ],
+  "attributes": {
+    "numberOfPosts": {
+      "type": "number",
+      "default": 5
+    },
+    "displayFeaturedImage": {
+      "type": "boolean",
+      "default": true
+    },
+    "order": {
+      "type": "string",
+      "default": "desc"
+    },
+    "orderBy": {
+      "type": "string",
+      "default": "date"
+    },
+    "main_title": {
+      "type": "string",
+      "default": "With Trullion’s AI-powered lease accounting software you can"
+    },
+    "imgID": {
+      "type": "number",
+      "default": 9
+    },
+    "cta_text": {
+      "type": "string",
+      "default": "Book A Demo"
+    },
+    "cta_url": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

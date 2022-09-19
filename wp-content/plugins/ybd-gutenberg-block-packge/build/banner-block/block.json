@@ -1,0 +1,98 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/banner-block",
+  "version": "0.1.0",
+  "title": "Banner Block",
+  "category": "widgets",
+  "icon": "slides",
+  "description": "Example block scaffolded with Create Block tool.",
+  "supports": {
+    "html": false,
+    "multiple": false,
+    "color": {
+      "text": false,
+      "background": false,
+      "link": false
+    }
+  },
+  "textdomain": "ybd-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "keywords": [
+    "banner",
+    "ybd"
+  ],
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "full"
+    },
+    "imgID": {
+      "type": "number",
+      "default": 8
+    },
+    "imgURL": {
+      "type": "string"
+    },
+    "first_title": {
+      "type": "string",
+      "default": "Lease Accounting Software for IFRS 16"
+    },
+    "main_title": {
+      "type": "string",
+      "default": "IFRS 16 compliance just got a whole lot easier thanks to AI-enhanced automated lease accounting software powered by Trullion"
+    },
+    "main_text": {
+      "type": "string",
+      "default": "Lease accounting software can keep you ahead of IFRS 16-related changes thanks to seamless automation and smart AI-enhanced capabilities. Say goodbye to errors and regulatory risk, and hello to painless compliance."
+    },
+    "btn_text": {
+      "type": "string",
+      "default": "Accelerate your compliance now"
+    },
+    "banner_text_color": {
+      "type": "string",
+      "default": "#fff"
+    },
+    "banner_small_title_color": {
+      "type": "string",
+      "default": "#998352"
+    },
+    "banner_large_title_color": {
+      "type": "string",
+      "default": "#fff"
+    },
+    "banner_background_color": {
+      "type": "string",
+      "default": "#212721"
+    },
+    "banner_cta_text_color": {
+      "type": "string",
+      "default": "#fff"
+    },
+    "banner_cta_bg_color": {
+      "type": "string",
+      "default": "#D3854C"
+    },
+    "imgID2": {
+      "type": "number"
+    }
+  },
+  "example": {
+    "attributes": {
+      "imgID": 8,
+      "first_title": "Lease Accounting Software for IFRS 16",
+      "main_title": "IFRS 16 compliance just got a whole lot easier thanks to AI-enhanced automated lease accounting software powered by Trullion",
+      "main_text": "Lease accounting software can keep you ahead of IFRS 16-related changes thanks to seamless automation and smart AI-enhanced capabilities. Say goodbye to errors and regulatory risk, and hello to painless compliance.",
+      "btn_text": "Accelerate your compliance now",
+      "banner_text_color": "#fff",
+      "banner_small_title_color": "#998352",
+      "banner_large_title_color": "#fff",
+      "banner_background_color": "#212721",
+      "banner_cta_text_color": "#fff",
+      "banner_cta_bg_color": "#D3854C"
+    }
+  }
+}

@@ -1,0 +1,101 @@
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/trial-block/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.section-third {
+  height: 890px;
+  padding-left: 106px;
+  padding-right: 106px;
+  padding-top: 122px;
+  padding-bottom: 122px;
+}
+@media (max-width: 1439.98px) {
+  .section-third {
+    height: auto;
+  }
+}
+@media (max-width: 991.98px) {
+  .section-third {
+    padding: 3rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-third {
+    padding: 1.5rem;
+  }
+}
+.section-third .section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media (max-width: 767.98px) {
+  .section-third .section-container {
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+}
+.section-third .section-container .left {
+  width: 592px;
+}
+@media (max-width: 767.98px) {
+  .section-third .section-container .left {
+    width: 100%;
+  }
+}
+.section-third .section-container .right {
+  width: 486px;
+}
+@media (max-width: 767.98px) {
+  .section-third .section-container .right {
+    width: 100%;
+  }
+}
+.section-third .section-container .right > h4 {
+  color: #2A7DE1;
+  letter-spacing: 1px;
+  font-size: 20px;
+  line-height: 36px;
+  padding-bottom: 5px;
+  font-family: GTAmerica;
+}
+.section-third .section-container .right h3 {
+  color: #212721;
+  font-size: 32px;
+  line-height: 50px;
+  font-family: RecifeText;
+  margin-bottom: 0;
+}
+.section-third .section-container .right h4.second {
+  font-family: GTAmerica;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.section-third .section-container .right p {
+  font-family: GTAmerica;
+  font-size: 18px;
+  line-height: 33px;
+}
+.section-third .section-container .right hr {
+  color: rgba(33, 39, 33, 0.38);
+  margin: 2rem 0;
+}
+.section-third .section-container .right div.toggle:not(#div1) {
+  display: none;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

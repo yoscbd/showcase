@@ -1,0 +1,101 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-ybd-functions-ybd-display-custom-post-block {
+	max-width: 1440px;
+	margin: 0 auto;
+	background-color: #E8E9E5;
+
+
+	padding: 2rem;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	list-style-type: none;
+
+	li {
+		padding-bottom: 2.5rem;
+		color: #212721;
+
+		h5 {
+			padding-top: 0.5rem;
+
+			a {
+				text-decoration: none;
+				letter-spacing: 0.1rem;
+				font-weight: bold;
+				color: #212721;
+			}
+		}
+
+		.editor-ybd-li {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			align-items: flex-start;
+
+			&>div {
+				p {
+					margin-bottom: 0.5rem;
+				}
+
+			}
+
+			.understrap-read-more-link {
+				letter-spacing: 0.1rem;
+				font-weight: bold;
+				color: inherit;
+				letter-spacing: 2px;
+			}
+		}
+	}
+
+	li.columns-1 {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		img {
+			max-width: 500px;
+		}
+
+		.editor-ybd-li {
+			div {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+
+	}
+
+	li.columns-2 {
+		width: 49%;
+
+	}
+
+	li.columns-3 {
+		width: 31%;
+
+	}
+
+	li.columns-4 {
+		width: 24%;
+
+	}
+
+}
+
+ul.columns-3 {
+	justify-content: space-around;
+}

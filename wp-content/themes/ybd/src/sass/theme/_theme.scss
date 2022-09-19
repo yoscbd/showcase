@@ -1,0 +1,480 @@
+//general and fonts
+//@import '/home-page/general'; //relative path to file
+@import "home-page/general";
+
+
+
+//main navigation:
+@import "home-page/navigation";
+
+
+//Likes css:
+@import "likes";
+
+
+
+//main content:
+#full-width-page-wrapper {
+    @include no_padding__all;
+
+    .container#content {
+        @include no_padding__all;
+
+        //section 1: 
+        @import "home-page/section-1";
+
+
+        //section 2: 
+        @import "home-page/section-2";
+
+        //section 3: 
+        @import "home-page/section-3";
+
+
+        .section-forth {
+            //  @include all_sections_padding_media_queries();
+
+            .section-container {
+
+                @include flex_horizontal_center();
+
+                @media (max-width: 1300px) {
+                    justify-content: space-between;
+                }
+
+                @media (max-width: 767.98px) {
+
+                    flex-direction: column;
+                }
+
+                @media (min-width: 768px) and (max-width: 1439.98px) {
+                    justify-content: center;
+                }
+
+                .left {
+                    width: 50%;
+                    max-width: 721px;
+                    height: 563px;
+                    background: $brand-light-brown;
+                    @include flex_horizontal_center();
+                    @include all_sections_padding();
+                    @include all_sections_padding_media_queries();
+                    flex-direction: column;
+                    align-items: start;
+                    color: $brand-white;
+
+                    @media (max-width: 1300px) {
+                        height: auto;
+                        padding: 2rem;
+                        width: 59%;
+
+                    }
+
+                    @media (max-width: 767.98px) {
+                        width: 100%;
+                    }
+
+                    @media (min-width: 768px) and (max-width: 1439px) {
+                        height: 480px;
+                        width: 50%
+                    }
+
+
+                    h4 {
+                        font-size: 2rem;
+                        font-family: RecifeText;
+                        line-height: 3.12rem;
+
+
+                        @media (max-width: 1300px) {
+                            font-size: 1.5rem;
+                            line-height: 2rem;
+
+                        }
+                    }
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+
+                        li {
+                            font-size: 1.1rem;
+                            line-height: 41px;
+                            font-family: GTAmerica;
+
+                            @media (max-width: 1300px) {
+                                font-size: 1rem;
+                                line-height: 2rem;
+
+                            }
+
+                            i {
+                                width: 8px;
+                                height: 9px;
+                                color: $brand-white;
+                                padding-right: 1.5rem;
+                            }
+                        }
+                    }
+
+                    .cta-button {
+                        width: 194px;
+                        padding: 1rem 0;
+                        background-color: $brand-white;
+                        font-size: 1rem;
+                        color: $brand-black;
+                    }
+
+                }
+
+                .right {
+                    width: 50%;
+                    max-width: 721px;
+                    height: 563px;
+                    background: $brand-black;
+                    @include flex_horizontal_center();
+
+                    @media (max-width: 1300px) {
+                        height: auto;
+                        width: 39%;
+                    }
+
+                    @media (max-width: 767.98px) {
+                        width: 100%;
+                    }
+
+                    @media (min-width: 768px) and (max-width: 1439px) {
+                        height: 480px;
+                        width: 50%
+                    }
+
+                }
+            }
+        }
+
+
+
+        .section-fifth {
+            .section-container {
+                .quote {
+                    padding-bottom: 10rem;
+
+                    @media (max-width: 1300px) {
+                        padding-bottom: 0;
+                    }
+
+                    .quote-container {
+                        display: flex;
+                        justify-content: start;
+                        align-items: end;
+                        position: relative;
+                        padding-left: 214px;
+                        padding-top: 95px;
+
+                        @media (max-width: 1300px) {
+                            align-items: center;
+                            @include all_sections_padding();
+                        }
+
+                        @media (max-width: 991.98px) {
+                            flex-direction: column;
+                            padding: 3rem;
+                        }
+
+
+
+                        .quote-text-wrap {
+                            width: 804px;
+                            //height: 547px;
+                            display: inline-block;
+                            background-color: #E8E9E5;
+
+                            padding: 80px 233px 80px 89px;
+
+                            @media (max-width: 1300px) {
+                                padding: 3rem;
+                            }
+
+                            @media (max-width: 991.98px) {
+
+                                width: 100%;
+                                padding: 2rem;
+                            }
+
+
+                            .title {
+                                i {
+                                    font-size: 2rem;
+                                    line-height: 2rem;
+                                }
+
+                            }
+
+                            .main-text {
+
+                                font-size: 1.11rem;
+                                line-height: 2.25rem;
+                            }
+
+                            .sub-text {
+                                font-size: 16px;
+                                line-height: 30px;
+                            }
+                        }
+
+                        .img-wrap {
+                            display: inline-block;
+                            position: relative;
+                            left: -10%;
+
+                            @media (max-width: 1300px) {
+                                left: -2%;
+                            }
+
+                            @media (max-width: 991.98px) {
+                                left: 0;
+                                transform: translate(0, -2rem);
+                            }
+
+                            img {
+                                @media (max-width: 991.98px) {
+
+                                    max-width: 150px;
+                                }
+                            }
+
+                        }
+
+                        .icon-wrap {
+                            display: inline-block;
+                            transform: translate(-130%, 50%);
+
+                            @media (max-width: 1300px) {
+                                transform: translate(-70%, 120%);
+                                display: none;
+                            }
+
+                            @media (max-width: 991.98px) {
+                                display: none;
+                            }
+
+
+                        }
+                    }
+                }
+
+                div.cta {
+                    width: 100%;
+                    height: 209px;
+                    background-color: $brand-blue;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    @media (max-width: 767.98px) {
+                        padding: 0 3rem;
+                    }
+
+                    h4 {
+                        font-family: GTAmerica;
+                        font-size: 20px;
+                        line-height: 36px;
+                        letter-spacing: 1px;
+                        color: $brand-white;
+                        margin-bottom: 1.1rem;
+                        text-align: center;
+                    }
+
+                    button {
+                        width: 224px;
+                        height: 71px;
+                        background-color: $brand-black;
+                        color: $brand-white;
+                        font-size: 1rem;
+                        border: none;
+                    }
+                }
+
+            }
+        }
+
+        .section-sixth {
+            .section-container {
+                background: $brand-gray-gradient;
+                height: 1000px;
+                padding: 116px 106px 136px 106px;
+                color: $brand-black;
+
+                @media (max-width: 1439.98px) {
+                    height: auto;
+                }
+
+                @media (max-width: 575.98px) {
+
+                    padding-top: 4rem;
+                }
+
+                &>h4 {
+                    text-align: center;
+                    padding-bottom: 116px;
+                    margin: 0;
+
+                    @media (max-width: 575.98px) {
+
+                        padding-bottom: 4rem;
+                    }
+
+                }
+
+                .items {
+
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: start;
+                    justify-content: space-between;
+
+
+                    .item {
+                        width: 357px;
+                        padding-bottom: 6.06rem;
+
+
+                        @media (max-width: 1439.98px) {
+                            width: 30%;
+                        }
+
+                        @media (max-width: 767.98px) {
+                            width: 48%;
+                        }
+
+                        @media (max-width: 575.98px) {
+                            width: 100%;
+                            padding-bottom: 2rem;
+                        }
+
+
+                        div.icon {
+                            text-align: left;
+                            padding-bottom: 1rem;
+                        }
+
+                        h4 {
+                            font-size: 2rem;
+                            line-height: 3.12rem;
+                            text-align: center;
+                            font-family: RecifeText;
+
+                        }
+
+                        h6 {
+
+                            font-size: 1.5rem;
+                            line-height: 1.5rem;
+                            color: $brand-black;
+                            font-family: GTAmerica;
+                        }
+
+                        p {
+                            font-size: 1rem;
+                            line-height: 1.58rem;
+                            font-family: GTAmerica;
+                        }
+                    }
+                }
+
+
+
+            }
+        }
+
+        .section-seventh {
+            @include all_sections_padding();
+            @include all_sections_padding_media_queries();
+
+            .section-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                @media (max-width: 991.98px) {
+                    flex-direction: column;
+                }
+
+                .left {
+                    width: 698px;
+
+                    img {
+                        @media (max-width: 991.98px) {
+                            max-width: 60%;
+                        }
+                    }
+
+                    @media (max-width: 1439.98px) {
+                        width: 60%;
+                    }
+
+                    @media (max-width: 991.98px) {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+
+                .right {
+                    width: 486px;
+
+                    @media (max-width: 1439.98px) {
+                        width: 36%;
+                    }
+
+                    @media (max-width: 991.98px) {
+                        width: 100%;
+                    }
+
+                    h2 {
+                        font-size: 2rem;
+                        line-height: 50px;
+                        margin: 0;
+                    }
+
+                    p {
+                        font-size: 1.1rem;
+                        line-height: 2rem;
+                    }
+                }
+            }
+        }
+
+        .section-8 {
+            .section-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background: $brand-blue;
+                padding: 99px 2rem;
+
+                h5 {
+                    font-size: 2.625rem;
+                    line-height: 3.437rem;
+                    color: $brand-white;
+                    margin: 0;
+                    padding-bottom: 2rem;
+
+                }
+
+                button {
+                    width: 192px;
+                    height: 71px;
+                    font-size: 1rem;
+                    line-height: 1.418rem;
+                    background: $brand-gray;
+                    border: none;
+
+                }
+            }
+        }
+
+    }
+}

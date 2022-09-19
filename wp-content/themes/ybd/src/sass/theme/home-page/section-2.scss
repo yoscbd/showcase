@@ -1,0 +1,105 @@
+.section-second {
+    //height: 695px;
+    background-color: $brand-gray;
+
+    @include all_sections_padding();
+    @include all_sections_padding_media_queries();
+
+
+    .item {
+        width: 380px;
+        margin: 0 auto;
+
+        @media screen and (max-width: 1439.98px) {
+            width: 90%;
+        }
+
+        @media (max-width: 767.98px) {
+            width: 100%;
+        }
+
+        /*
+        @media screen and (max-width: 880px) {
+            width: 220px;
+        }
+
+        @media screen and (max-width: 720px) {
+            width: 100%;
+        } */
+
+        h4 {
+            font-size: 20px;
+            line-height: 36px;
+            letter-spacing: 1px;
+            color: $brand-blue;
+
+            @media (max-width: 575.98px) {
+                font-size: 18px;
+
+            }
+        }
+
+        p {
+            font-size: 0.96rem;
+            line-height: 30px;
+            color: $brand-black;
+            font-family: GTAmerica;
+            // width: 380px;
+
+        }
+    }
+
+    .item1 {
+        grid-area: myArea1;
+
+        h3 {
+            font-size: 32px;
+            line-height: 50px;
+            font-family: RecifeText;
+            color: $brand-black;
+
+            @media (max-width: 575.98px) {
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+            }
+
+        }
+    }
+
+    .item4 {
+        grid-area: myArea4;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas: 'myArea1 myArea2 myArea3'
+            '.. myArea4 ..';
+
+        @media screen and (max-width: 1439.98px) {
+            grid-template-areas: 'myArea1 myArea2 '
+                'myArea4 myArea3';
+
+        }
+
+        @media (max-width: 767.98px) {
+            display: inline-block;
+        }
+
+        /*  @media screen and (max-width: 720px) {
+            display: inline-block;
+        } */
+
+
+
+        // gap: 44px;
+        //background-color: #2196F3;
+        //padding: 10px;
+    }
+
+    .grid-container>div {
+        //  background-color: rgba(255, 255, 255, 0.8);
+        //  text-align: center;
+        //  padding: 20px 0;
+        // font-size: 30px;
+    }
+}

@@ -1,0 +1,29 @@
+.section-forth {
+
+	.create-note {
+		button {
+			background: #d3854c;
+			border-color: #000;
+			padding: 0.25rem 0.5rem;
+			font-size: .875rem;
+			border-radius: 0.2rem;
+			color: #fff;
+		}
+	}
+
+	.block-editor-url-input__button {
+		display: inline !important;
+	}
+
+	.cta-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+}
+
+.wp-block {
+	margin-top: 0;
+	margin-bottom: 0;
+}

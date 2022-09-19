@@ -1,0 +1,104 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/trial-block",
+  "version": "0.1.0",
+  "title": "Trial block",
+  "category": "widgets",
+  "icon": "performance",
+  "description": "Custom blocks for home page Trial section",
+  "supports": {
+    "html": false,
+    "multiple": true,
+    "color": {
+      "text": false,
+      "background": false,
+      "link": false
+    }
+  },
+  "textdomain": "ybd-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "keywords": [
+    "banner",
+    "ybd"
+  ],
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "full"
+    },
+    "imgID": {
+      "type": "number",
+      "default": 11
+    },
+    "imgURL": {
+      "type": "string",
+      "default": "http://127.0.0.1/custom/wp-content/uploads/2022/08/Group-2074-2222.webp"
+    },
+    "first_title": {
+      "type": "string",
+      "default": "In 30 Days Or Less!"
+    },
+    "main_title": {
+      "type": "string",
+      "default": "Use Automation To Streamline Your Processes: Accelerate IFRS 16 Compliance With Trullion’s Lease Accounting Software"
+    },
+    "first_item_title": {
+      "type": "string",
+      "default": "Automates IFRS 16 workflows"
+    },
+    "first_item_text": {
+      "type": "string",
+      "default": "Your most precious resource is your time. Trullion automates IFRS 16 workflows to ensure compliance, eliminate error and streamline operations in a fraction of the time it would take without Trullion’s game-changing lease accounting software in place."
+    },
+    "second_item_title": {
+      "type": "string",
+      "default": "Automates 2"
+    },
+    "second_item_text": {
+      "type": "string",
+      "default": "Your most precious 2 Trullion automates IFRS 16 workflows to ensure compliance, eliminate error and streamline operations in a fraction of the time it would take without Trullion’s game-changing lease accounting software in place."
+    },
+    "third_item_title": {
+      "type": "string",
+      "default": "Automates 3"
+    },
+    "third_item_text": {
+      "type": "string",
+      "default": "Your most precious 3 Trullion automates IFRS 16 workflows to ensure compliance, eliminate error and streamline operations in a fraction of the time it would take without Trullion’s game-changing lease accounting software in place."
+    },
+    "imgID2": {
+      "type": "number"
+    },
+    "tabs_toggle_status": {
+      "type": "boolean",
+      "default": true
+    },
+    "toggle_class": {
+      "type": "string",
+      "default": "show-me"
+    },
+    "item_text_color": {
+      "type": "string",
+      "default": "#212721"
+    },
+    "item_title_color": {
+      "type": "string",
+      "default": "#212721"
+    },
+    "first_title_color": {
+      "type": "string",
+      "default": "#2A7DE1"
+    },
+    "main_title_color": {
+      "type": "string",
+      "default": "#212721"
+    },
+    "trial_background_color": {
+      "type": "string",
+      "default": "#fff"
+    }
+  }
+}

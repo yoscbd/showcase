@@ -1,0 +1,79 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-ybd-functions-ybd-display-custom-post-block {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #E8E9E5;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.wp-block-ybd-functions-ybd-display-custom-post-block li {
+  padding-bottom: 2.5rem;
+  color: #212721;
+}
+.wp-block-ybd-functions-ybd-display-custom-post-block li h5 {
+  padding-top: 0.5rem;
+}
+.wp-block-ybd-functions-ybd-display-custom-post-block li h5 a {
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  color: #212721;
+}
+.wp-block-ybd-functions-ybd-display-custom-post-block li .editor-ybd-li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.wp-block-ybd-functions-ybd-display-custom-post-block li .editor-ybd-li > div p {
+  margin-bottom: 0.5rem;
+}
+.wp-block-ybd-functions-ybd-display-custom-post-block li .editor-ybd-li .understrap-read-more-link {
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  color: inherit;
+  letter-spacing: 2px;
+}
+.wp-block-ybd-functions-ybd-display-custom-post-block li.columns-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wp-block-ybd-functions-ybd-display-custom-post-block li.columns-1 img {
+  max-width: 500px;
+}
+.wp-block-ybd-functions-ybd-display-custom-post-block li.columns-1 .editor-ybd-li div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wp-block-ybd-functions-ybd-display-custom-post-block li.columns-2 {
+  width: 49%;
+}
+.wp-block-ybd-functions-ybd-display-custom-post-block li.columns-3 {
+  width: 31%;
+}
+.wp-block-ybd-functions-ybd-display-custom-post-block li.columns-4 {
+  width: 24%;
+}
+
+ul.columns-3 {
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

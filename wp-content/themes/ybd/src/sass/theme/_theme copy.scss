@@ -1,0 +1,300 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* @font-face {
+    font-family: 'RecifeTextTrial';
+    src: url('http://127.0.0.1/trullion/wp-content/themes/understrap/fonts/RecifeTextWebTrial-Regular.woff2') format('woff2'),
+        url('http://127.0.0.1/trullion/wp-content/themes/understrap/fonts/RecifeTextWebTrial-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT-America-Standard-Regular';
+    src: url('http://127.0.0.1/trullion/wp-content/themes/understrap/fonts/FontsFree-Net-GT-America-Regular-1.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+} */
+
+@font-face {
+    font-family: 'RecifeText';
+    src: url('#{$font-path}/RecifeTextWebTrial-Regular.woff2'),
+    url('#{$font-path}/RecifeTextWebTrial-Regular.woff'),
+    url('#{$font-path}/RecifeTextWebTrial-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GTAmerica';
+    src: url('#{$font-path}/FontsFree-Net-GT-America-Regular-1.woff2'),
+    url('#{$font-path}/FontsFree-Net-GT-America-Regular-1.woff')''
+    url('#{$font-path}/FontsFree-Net-GT-America-Regular-1.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#main.site-main {
+    @media screen and (max-width: 1400px) {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+
+#primary {
+    padding: 0;
+}
+
+body {
+    //  font-family: 'RecifeTextTrial';
+    font-family: $font-family-serif;
+    background-color: #000;
+}
+
+#page {
+    #full-width-page-wrapper {
+        padding-top: 0;
+    }
+}
+
+body header#wrapper-navbar {
+    font-family: $font-family-sans-serif;
+
+    #main-nav {
+        //  background-color: $brand-white !important;
+
+        @media screen and (min-width: 768px) {
+            padding: 0;
+        }
+
+        .container,
+        .container-fluid {
+            padding: 0;
+
+            .header-demo {
+                p {
+                    width: 189px;
+                    height: 55px;
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $brand-white;
+                    background: rgba(211, 133, 76, 1);
+                    cursor: pointer;
+                }
+            }
+
+            .navbar-toggler {
+                color: #222;
+                border-color: #222;
+                border: none;
+                box-shadow: none;
+
+                .navbar-toggler-icon {
+                    background-color: #212721;
+                }
+            }
+        }
+    }
+}
+
+section.first {
+    height: 694px;
+    padding: 95px 106px 88px 106px;
+
+    @media screen and (max-width: 1400px) {
+        padding: 1rem 2rem 1rem 2rem !important;
+        max-width: 100%;
+    }
+
+    @media screen and (max-width: 1200px) {
+        padding: 1.5vh 10vw 1.5vh 10vw !important;
+    }
+
+
+
+    @media screen and (min-width: 1200px) and (max-width: 1400px) {
+        // height: 694px;
+        padding: 1rem;
+    }
+
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+        // height: 694px;
+        height: auto !important;
+        padding: 1rem;
+    }
+
+    @media screen and (max-width: 992px) {
+        // height: 694px;
+        height: auto !important;
+        padding: 1rem;
+    }
+
+    height: auto;
+    background: $brand-black;
+    color: $brand-white;
+
+    .banner-title {
+        h4 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 36px;
+            letter-spacing: 1px;
+            color: $brand-brown;
+            font-family: "GT-America-Standard-Regular";
+            margin-bottom: 25px;
+
+            @media screen and (max-width: 1400px) {
+
+                margin-bottom: 0;
+            }
+
+            @media screen and (max-width: 1200px) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .banner-main-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @media screen and (max-width: 1400px) {
+            align-items: center;
+            justify-content: start;
+        }
+
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .left {
+            max-width: 664px;
+
+            @media screen and (max-width: 1400px) {
+                width: 50%;
+                max-width: none;
+            }
+
+            @media screen and (max-width: 1200px) {
+                width: 100%;
+            }
+
+            h3 {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 50px;
+                letter-spacing: -0.5px;
+                color: $brand-white;
+                margin-bottom: 30px;
+
+
+
+                @media screen and (max-width: 1400px) {
+
+                    font-size: 2vw;
+                    line-height: 2rem;
+                    margin-bottom: 02vh !important;
+                }
+
+                @media screen and (max-width: 1200px) {
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                }
+
+
+
+            }
+
+            p {
+                @media screen and (min-width: 768px) {}
+
+                margin-bottom: 45px;
+
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 33px;
+                letter-spacing: 0.5px;
+                color: $brand-white;
+                //width: 92%;
+                font-family: "GT-America-Standard-Regular";
+
+                @media screen and (max-width: 1400px) {
+                    font-size: 1.3vw;
+                    line-height: 1.7rem;
+                    margin-bottom: 0;
+                }
+
+                @media screen and (max-width: 1200px) {
+                    font-size: 1rem;
+                    margin-bottom: 2vh;
+                }
+
+
+            }
+
+
+        }
+
+        .right {
+            max-width: 530px;
+            padding-top: 1rem;
+
+            @media screen and (max-width: 1400px) {
+                width: 50%;
+                max-width: none;
+                display: flex;
+                justify-content: end;
+            }
+
+            @media screen and (max-width: 1200px) {
+                width: 100%;
+                justify-content: start;
+                padding-bottom: 2vh
+            }
+        }
+
+
+    }
+
+    .banner-cta {
+        button {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+            color: $brand-white;
+            width: 312px;
+            height: 71px;
+            background-color: $brand-light-brown;
+            font-family: "GT-America-Standard-Regular";
+            border: none;
+        }
+    }
+}
+
+/*Over rides*/
+
+.bg-primary {
+    background-color: $brand-white  !important;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-brand {
+    color: #000 !important;
+    padding-left: 18px;
+
+}
